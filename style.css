@@ -5,9 +5,15 @@
   font-family: "century gothic", sans-serif;
 
 }
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
 .navlist{
   width :100%;
   padding: 5px 10vw;
+  position: fixed;
 }
 .navlist ul{
   display: flex;
@@ -18,4 +24,27 @@
 }
 .navlist ul a{
   margin-left: 20px;
+}
+
+.container{
+ width: 100%;
+ height: 80vh;
+ padding-top: 20vh;
+ background-image: url(new.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ text-align: center;
+}
+.container h1{
+  font-family: serif;
+  margin-bottom: 20px;
+  word-spacing: 5px;
+}
+.container p{
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+.container button{
+  padding: 10px;
+  background: none;
 }
