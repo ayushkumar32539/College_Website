@@ -138,4 +138,6 @@ width: 150px;
 }
 .footer .f3 ul{
   list-style: none;
+  color: #f80;
+  font-family: serif;
 }
