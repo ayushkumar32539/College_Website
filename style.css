@@ -24,9 +24,6 @@ width: 150px;
   display: flex;
   list-style: none;
 }
-.navlist ul li:first-child{
-  flex: 1;
-}
 
 .navlist ul h4{
   font-family: serif;
@@ -51,6 +48,10 @@ width: 150px;
  background-position: center;
  text-align: center;
 }
+.navlist ul li:first-child{
+  flex: 1;
+}
+
 .container h1{
   font-family: serif;
   margin-bottom: 20px;
@@ -86,6 +87,7 @@ width: 150px;
   height: auto;
   position: relative;
   z-index:-1;
+  padding: 10px;
 }
 
 .content_box img{
@@ -104,22 +106,36 @@ width: 150px;
   line-height: 35vw;
   font-size: 3vw;
 }
-footer{
+.footer{
   margin-top: 40px;
   margin-left: 15px;
   font-size: 16px;
   display: flex;
-  list-style: none;
-  flex: 1;
-  text-align: center;
+  flex-wrap: wrap;
+  text-align: left;
 }
-
+.footer .f1{
+  width: 40%;
+  padding: 0 15px;
+}
+.footer .f2{
+  width: 25%;
+  padding: 0 15px;
+}
+.footer .f3{
+  width: 25%;
+  padding: 0 15px;
+}
 .footer .f1 ul{
   color: #f80;
   font-family: serif;
+  list-style: none;
 }
 
 .footer .f2 a{
   color: #f80;
   font-family: serif;
+}
+.footer .f3 ul{
+  list-style: none;
 }
