@@ -162,6 +162,11 @@ margin-right: auto;
   color: #fff;
   font-family: serif;
 }
+
+.footer ul a:hover{
+  color: #f80;
+}
+
 .footer .f3 ul{
   list-style: none;
   color: #fff;
