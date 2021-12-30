@@ -5,13 +5,13 @@
   font-family: "century gothic", sans-serif;
   transition: 0.8s;
 
-
 }
 
 a{
   color:#fff;
   text-decoration: none;
 }
+/* navlist */
 .navlist img{
 width: 150px;
 }
@@ -38,6 +38,12 @@ width: 150px;
 .navlist ul a:hover{
   color: #f80;
 }
+
+.navlist ul li:first-child{
+  flex: 1;
+}
+
+/* Container */
 .container{
  width: 100%;
  color: #fff;
@@ -49,16 +55,15 @@ width: 150px;
  background-position: center;
  text-align: center;
 }
-.navlist ul li:first-child{
-  flex: 1;
-}
 
 .container h1{
+  text-shadow: 2px 2px #77773c;
   font-family: serif;
   margin-bottom: 20px;
   word-spacing: 5px;
 }
 .container p{
+  text-shadow: 2px 2px #77773c;
   margin-bottom: 30px;
   letter-spacing: 2px;
 }
@@ -70,6 +75,8 @@ width: 150px;
 .container button:hover{
   background: #f80;
 }
+
+/* Facilities */
 .content_box{
   width: 70%;
   margin: auto;
@@ -90,6 +97,7 @@ width: 150px;
   position: relative;
   z-index:-1;
   padding: 10px;
+  font-size: 2vw;
 }
 
 .content_box img{
@@ -115,7 +123,8 @@ width: 150px;
 }
 .s1{
   margin-left: auto;
-margin-right: auto;
+  margin-right: auto;
+
 }
 
 .section1{
@@ -130,6 +139,9 @@ margin-right: auto;
  color: #f80;
  padding: 20px;
 }
+
+/* footer */
+
 .footer{
   padding: 40px;
   margin-top: 40px;
