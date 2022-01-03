@@ -19,6 +19,7 @@ width: 150px;
   width :99%;
   padding: 3px 0.5vw;
   position: fixed;
+  z-index: 1;
   background: #77773c;
 }
 .navlist ul{
@@ -32,8 +33,9 @@ width: 150px;
 }
 
 .navlist ul a{
-  margin-left: 15px;
-  font-size: 16px;
+  margin-left: 20px;
+  font-size: 18px;
+  dis
 }
 .navlist ul a:hover{
   color: #f80;
@@ -49,13 +51,25 @@ width: 150px;
  color: #fff;
  height: 80vh;
  padding-top: 25vh;
- background-image: url(new.jpg);
+ background-image: url(new1.jpg);
  background-repeat: no-repeat;
  background-size: cover;
  background-position: center;
  text-align: center;
 }
-
+.overlay{
+  position: absolute;
+  height: 90%;
+  width: 100%;
+  color: white;
+  top: 100px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+background: rgba(0, 0, 0, 0.4);
+}
 .container h1{
   text-shadow: 2px 2px #77773c;
   font-family: serif;
@@ -70,11 +84,82 @@ width: 150px;
 .container button{
   padding: 10px;
   background: none;
-  border: 1px solid #f80;
+  border: 2px solid #f80;
+  border-radius: 30%
 }
 .container button:hover{
   background: #f80;
 }
+
+
+
+
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 95px;
+  padding-top: 120px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
 
 /* Facilities */
 .content_box{
@@ -92,8 +177,10 @@ width: 150px;
   justify-content: space-between;
 }
 .content_box .column{
-  width: 35%;
+  width: 40%;
   height: auto;
+  padding-left: 30px;
+  padding-right: 50px;
   position: relative;
   z-index:-1;
   font-size: 2vw;
@@ -119,10 +206,17 @@ width: 150px;
   display: flex;
 }
 
-.section2{
+
+
+ .section2{
   padding: 30px;
   margin-bottom: 40px;
+  width: 700px;
+  height: 400px;
+  overflow: hidden;
+  transform: translate(40%,2%);
 }
+
 .section2 h1{
  text-align: center;
  color: #f80;
@@ -169,11 +263,21 @@ h3{
 .footer ul a:hover{
   color: #f80;
 }
+.social a{
+display: inline-block;
+height: 40px;
+width: 40px;
+background-color: rgba(0,0,0,0.2);
+margin: 0 10px 10px 0;
+text-align: center;
+line-height: 40px;
+border-radius: 50px;
+transition: all 0.4s;
+}
 
-.footer .f3 ul{
-  list-style: none;
-  color: #fff;
-  font-family: serif;
+.social a:hover{
+color: #f80;
+background-color: #fff;
 }
 
 
@@ -194,16 +298,3 @@ h3{
     margin: 50px;
     padding: 30px 60px 0 60px;
 }
-
-
-
-/* @media screen and (min-width: 601px) {
-   *{
-    font-size: 80px;
-  }
-}
-@media screen and (max-width: 600px) {
-  *{
-    font-size: 30px;
-  }
-} */

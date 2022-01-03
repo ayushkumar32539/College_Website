@@ -2,6 +2,7 @@
 <html>
   <head>
      <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>NIET</title>
   </head>
   <body>
@@ -14,7 +15,7 @@
        <li><h4>NIET</h4></li>
        <li><a href="index.html">Home</a></li>
        <li><a href="about.html">About us</a></li>
-       <li><a href="achievement.html">Achievements</a></li>
+       <li><a href="">Achievements</a></li>
        <li><a href="#">Courses</a></li>
        <li><a href="#">Contact us</a></li>
      </ul>
@@ -24,15 +25,17 @@
   <!-- header -->
 
   <div class="container" id="container">
+    <div class="overlay">
     <h1>NIET</h1>
     <p>NATIONAL INSTITUTE OF EDUCATION AND TECHNOLOGY <br>Here we have the best students.Where are you the world is waiting for you.</p>
-    <button>Enroll Now</button>
+    <button onclick="location.href='enroll.html'">Enroll Now</button>
+    </div>
   </div>
 
   <!-- Facilities -->
 
   <div class="content_box">
-    <h1><u>FACILITIES</u></h1>
+    <h1>FACILITIES</h1>
     <div class="row">
       <div class="column">
         <img src="campus1.jpeg">
@@ -54,7 +57,7 @@
   </div>
 
   <!-- Courses offered -->
-   <h1 id="course"><u>Courses Offered</u></h1>
+   <h1 id="course">Courses Offered</h1>
  <div class="section1">
 
    <div class="s1">
@@ -68,10 +71,16 @@
      </div>
  </div>
 
- <div class="section2">
-   <h1><u>Our Major Recruiters</u></h1>
+  <div class="section2">
+   <h1>Our Major Recruiters</h1>
      <div class="s2">
        <img src="recruters.jpg "style ="width:100%">
+     </div>
+     <div class="s2">
+       <img src="recruters1.jpg "style ="width:100%">
+     </div>
+     <div class="s2">
+       <img src="recruters2.jpg "style ="width:100%">
      </div>
  </div>
 
@@ -79,7 +88,7 @@
 
   <footer class="footer">
     <div class="f1">
-      <h3><u>Address</u></h3>
+      <h3>Address</h3>
       <ul>
         <li><p>Hapur Bypass Road,<br> Adhyatmik Nagar,<br>Ghaziabad - 201009</p></li>
         <li>+919434234564,<br>+919458324832</li>
@@ -88,7 +97,7 @@
     </div>
 
     <div class="f2">
-      <h3><u>Quick links:</u></h3>
+      <h3>Quick links:</h3>
       <ul>
         <li><a href="http://naac.gov.in/index.php/en/">NAAC</a></li>
         <li><a href="https://www.aicte-india.org/">AICTE Approval letters</a></li>
@@ -99,10 +108,14 @@
     </div>
 
     <div class="f3">
-      <h3><u>About us</u></h3>
-      <ul>
-        <li>We provide on-campus residential facilities to the students, research scholars and faculty.</li>
-      </ul>
+      <h3>Follow us</h3>
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+
+
+      </div>
     </div>
 
   </footer>
